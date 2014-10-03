@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="m1M-09-GIc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ePP-Je-oqG">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cl1-JM-FnX" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JUt-5Z-dge"/>
+                        <viewControllerLayoutGuide type="bottom" id="QTk-q3-WHe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WMc-Ad-rwO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2x-ex-ayQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="toolBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="74R-re-enI">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFG-11-TQg">
+                                        <rect key="frame" x="8" y="6" width="266" height="27"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="txtInput:" destination="cl1-JM-FnX" eventType="touchUpInside" id="nJj-04-VVA"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9T-5b-ZYb">
+                                        <rect key="frame" x="282" y="6" width="30" height="30"/>
+                                        <state key="normal" image="search.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnMove:" destination="cl1-JM-FnX" eventType="touchUpInside" id="aZq-ez-v8A"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHS-bs-Cvm">
+                                <rect key="frame" x="0.0" y="528" width="320" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="toolBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-5j-dL5">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vy-ky-1P5">
+                                        <rect key="frame" x="30" y="7" width="25" height="25"/>
+                                        <state key="normal" image="btnLeft.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnBack:" destination="cl1-JM-FnX" eventType="touchUpInside" id="OgV-CK-Wv0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxc-cq-G0c">
+                                        <rect key="frame" x="85" y="8" width="25" height="25"/>
+                                        <state key="normal" image="btnRight.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnForward:" destination="cl1-JM-FnX" eventType="touchUpInside" id="pL4-Ds-VGe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuE-Ov-pdG">
+                                        <rect key="frame" x="265" y="8" width="25" height="25"/>
+                                        <state key="normal" image="btnStop.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnStop:" destination="cl1-JM-FnX" eventType="touchUpInside" id="VNW-0r-hHG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXm-QJ-kXb">
+                                        <rect key="frame" x="210" y="8" width="25" height="25"/>
+                                        <state key="normal" image="btnReload.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnReload:" destination="cl1-JM-FnX" eventType="touchUpInside" id="l9l-en-gr9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="webBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="hPl-gw-gYw">
+                                <rect key="frame" x="0.0" y="39" width="320" height="490"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKG-7T-DT0">
+                                <rect key="frame" x="3" y="44" width="315" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w1G-pg-LAc"/>
+                    <connections>
+                        <outlet property="bottomBar" destination="KFS-5j-dL5" id="8Z9-Ja-Xmf"/>
+                        <outlet property="btnBack" destination="1vy-ky-1P5" id="y4a-t7-2Ln"/>
+                        <outlet property="btnForward" destination="Jxc-cq-G0c" id="sBJ-3m-MqV"/>
+                        <outlet property="btnMove" destination="V9T-5b-ZYb" id="4Fz-HH-pb7"/>
+                        <outlet property="btnReload" destination="CXm-QJ-kXb" id="1i0-in-aEq"/>
+                        <outlet property="btnStop" destination="EuE-Ov-pdG" id="0FI-gN-vI9"/>
+                        <outlet property="topBar" destination="74R-re-enI" id="NsA-R6-2TF"/>
+                        <outlet property="txtInput" destination="hFG-11-TQg" id="Zl8-lH-cZa"/>
+                        <outlet property="webBack" destination="hPl-gw-gYw" id="qDz-PJ-sdC"/>
+                        <outlet property="webView" destination="hKG-7T-DT0" id="3ai-Vc-fZU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Idc-93-7pS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616" y="215"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qfY-wr-p2h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="m1M-09-GIc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <value key="contentSizeForViewInPopover" type="size" width="400" height="800"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tf8-cW-n6k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cl1-JM-FnX" kind="relationship" relationship="rootViewController" id="CBC-ZS-aWg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9G-uP-1KF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.2" y="215.84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btnLeft.png" width="70" height="70"/>
+        <image name="btnReload.png" width="70" height="70"/>
+        <image name="btnRight.png" width="70" height="70"/>
+        <image name="btnStop.png" width="70" height="70"/>
+        <image name="search.png" width="50" height="50"/>
+        <image name="toolBar.png" width="640" height="70"/>
+        <image name="webBack.png" width="640" height="1136"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
